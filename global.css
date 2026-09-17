@@ -1,5 +1,9 @@
 body{
     background-color: #121212;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Navagation Decoration */
@@ -9,7 +13,7 @@ nav {
     justify-content: space-between;
 }
 
-div {
+.nav-direction {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,6 +28,7 @@ div {
     max-width: 40px;
     max-height: 40px;
     filter: invert(1);
+    align-self: center;
 }
 
 .home-button {
@@ -93,7 +98,7 @@ div {
     color: #FFFFFF;
 }
 
-.install {
+.install-button {
     color: white;
     padding-left: 8px;
     padding-right: 10px;
@@ -118,19 +123,70 @@ div {
 
 /* The Aside Tab */
 aside {
-    border: 2px solid #b3b3b3;
+    border: 2px solid gray;
     border-radius: 10px;
     max-width: 500px;
     min-height: 600px;
 
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+#aside-header {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: white;
 }
 
 #add-button {
+    display: flex;
+
     padding: 4px;
     max-width: 20px;
     max-height: 20px;
     filter: invert(1);
+    align-self: center;
 }
 
+.aside-content {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+#aside-container1 {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#aside-container2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.create-playlist {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px
+}
+
+/* Legal Links */
+.legal-links {
+    font-size: 22px;
+}

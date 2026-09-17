@@ -7,6 +7,9 @@
         <meta name="description" content="Spotify Home Page Replication">
 
         <link rel="stylesheet" href="/global.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
         <title>Spotify</title>
     </head>
@@ -14,65 +17,108 @@
         <!-- Navagation Tab -->
         <nav>
             <img id="spotify-logo" src="/Spotify/Images/logos/spotify-logo.png" alt="Spotify Logo">
-            <div>
-                <div>
+            <div class="nav-direction">
+                <div class="nav-direction">
                     <img class="home-button" src="./Spotify/Images/Icons/home-icon.png" alt="home">
                 </div>
                 
-                <div>
+                <div class="nav-direction">
                     <img id="search-button" src="./Spotify/Images/Icons/search-icon.png" alt="Search Button">
                     <p id="search-bar">What do you want to play?</p>
                 </div>
 
-                <div>
+                <div class="nav-direction">
                     <p class="seperator">|</p>
                 </div>
 
-                <div>
+                <div class="nav-direction">
                     <img id="laundry-basket" src="./Spotify/Images/Icons/laundry-basket-icon.png">
                 </div>
             </div>
 
             <!-- Info Buttons -->
-            <div>
+            <div class="nav-direction">
                 <div>
-                    <a class="install">Premium</a>
-                    <a class="install">Support</a>
-                    <a class="install">Download</a>
+                    <a class="install-button">Premium</a>
+                    <a class="install-button">Support</a>
+                    <a class="install-button">Download</a>
                 </div>
 
-                <div>
-                    <div>
+                <div class="nav-direction">
+                    <div class="nav-direction">
                         <p class="seperator">|</p>
                     </div>
                 </div>
 
-                <div>
+                <div class="nav-direction">
                     <img id="download-icon" src="./Spotify/Images/Icons/download-icon.png" alt="Download Button">
-                    <a class="install">Install app</a>
+                    <a class="install-button">Install app</a>
                     <a id="sign-in-creds">Sign up</a>
                     <a id="login-creds">Login</a>
                 </div>
             </div>
         </nav>
         <!-- Library -->
+
         <aside>
-            <h2 class="">Your Library</h2>
-            <img id="add-button" src="./Spotify/Images/Icons/add-icon.png" alt="Add Songs">
             <div>
+                <div id="aside-header">
+                    <h2>Your Library</h2>
+                    <img id="add-button" src="./Spotify/Images/Icons/add-icon.png" alt="Add Songs">
+                </div>
 
+                <div id="aside-container1">
+                    <h3 class="aside-content">Create your first playlist</h3>
+                    <p class="aside-content">It's easy, We'll help you </p>
+                    <p class="create-playlist">Create playlist</p>
+                </div>
+
+                <div id="aside-container2">
+                    <h2 class="aside-content">Let's find some podcast to follow</h2>
+                    <p class="aside-content">we'll keep you updated on new episodes</p>
+                    <p class="create-playlist">Browse podcast</p>
+                </div>
             </div>
-            <h3 class="">Create your first playlist</h3>
-                <p class="">It's easy, We'll help you </p>
-                <p class="create-playlist">Create playlist</p>
-            <div>
 
             <div>
-                <h2 class="">Let's find some podcast to follow</h2>
-                <p class="">we'll keep you updated on new episodes</p>
-                <p class="create-playlist">Browse podcast</p>
+                <div>
+                    <a class="legal-links">Legal</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">Safety & Privacy Center</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">Privacy Policy</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">Cookies</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">About Ads</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">Accessibility</a>
+                </div>
+
+                <div>
+                    <a class="legal-links">Notice at Collections</a>
+                </div>
+
+                <div>
+                    <a class="legal-links" id="privacy-choices">Your Privacy Choices</a>
+                </div>
+
+                <div>
+                    <a class="legal-links" id="bolded-cookies">Cookies</a>
+                </div>
             </div>
         </aside>
+
         <!-- Top Songs -->
         <header>
             <p>Popular Albums</p>
@@ -81,63 +127,49 @@
         <main>
             <div>
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/I'mTheProblem-MorganWallen.jpg" alt="I'mTheProblem-MorganWallen">
+                    <img class="album-covers" src="./Spotify/Images/album-images/I'mTheProblem-MorganWallen.jpg" alt="I'mTheProblem-MorganWallen">
                     <h3>I'm The Problem</h3>
                     <p>Morgan Wallen</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/DeBiToRARMaSFOToS-BadBunny.jpeg" alt="DeBiToRARMaSFOToS-BadBunny">
+                    <img class="album-covers" src="./Spotify/Images/album-images/DeBiToRARMaSFOToS-BadBunny.jpeg" alt="DeBiToRARMaSFOToS-BadBunny">
                     <h3>DeBiToRARMaSFOToS</h3>
                     <p>BadBunny</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/10HoursofContinuousRain...-WhiteNoiseRadiance,RainSounds.jpg" alt="10 10HoursofContinuousRain">
+                    <img class="album-covers" src="./Spotify/Images/album-images/10HoursofContinuousRain...-WhiteNoiseRadiance,RainSounds.jpg" alt="10 10HoursofContinuousRain">
                     <h3>10 Hours of Continuous Rain</h3>
                     <p>WhiteNoiseRadiance, RainSounds</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/HITMEHARDANDSOFT-BillieEilish.jpg" alt="HITMEHARDANDSOFT-BillieEilish">
+                    <img class="album-covers" src="./Spotify/Images/album-images/HITMEHARDANDSOFT-BillieEilish.jpg" alt="HITMEHARDANDSOFT-BillieEilish">
                     <h3>HITMEHARDANDSOFT</h3>
                     <p>BillieEilish</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/GNX-KendrickLamar.jpg" alt="GNX-KendrickLamar">
+                    <img class="album-covers" src="./Spotify/Images/album-images/GNX-KendrickLamar.jpg" alt="GNX-KendrickLamar">
                     <h3>GNX</h3>
                     <p>Kendrick Lamar</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/$ome$exy$ongs4 u-PARTYNEXTDOOR,Drake.jpg" alt="u-PARTYNEXTDOOR,Drake">
+                    <img class="album-covers" src="./Spotify/Images/album-images/$ome$exy$ongs4 u-PARTYNEXTDOOR,Drake.jpg" alt="u-PARTYNEXTDOOR,Drake">
                     <h3>$ome$exy$ongs 4 U</h3>
                     <p>u-PARTYNEXTDOOR, Drake</p>
                 </article>
-            
 
-            
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/MUSIC-PlayboiCarti.jpeg" alt="MUSIC-PlayboiCarti">
+                    <img class="album-covers" src="./Spotify/Images/album-images/MUSIC-PlayboiCarti.jpeg" alt="MUSIC-PlayboiCarti">
                     <h3>MUSIC</h3>
                     <p>PlayboiCarti</p>
                 </article>
-            
-
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/hamilton(originalbroadwaycastrecording)-LinManuelMiranda.jpg" alt="hamilton(originalbroadwaycastrecording)">
+                    <img class="album-covers" src="./Spotify/Images/album-images/hamilton(originalbroadwaycastrecording)-LinManuelMiranda.jpg" alt="hamilton(originalbroadwaycastrecording)">
                     <h3>Hamlitom (originalbroadwaycastrecording)</h3>
                     <p>Lin Manuel Miranda</p>
                 </article>
@@ -145,39 +177,39 @@
 
             <div>
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/EvenInArcadia-SleepToken.jpg" alt="EvenInArcadia-SleepToken">
+                    <img class="album-covers" src="./Spotify/Images/album-images/EvenInArcadia-SleepToken.jpg" alt="EvenInArcadia-SleepToken">
                     <h3>EvenInArcadia</h3>
                     <p>Sleep Token</p>
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/Shortn'Sweet-SabrinaCarpenter.jpg" alt="Shortn'Sweet-SabrinaCarpenter">
+                    <img class="album-covers" src="./Spotify/Images/album-images/Shortn'Sweet-SabrinaCarpenter.jpg" alt="Shortn'Sweet-SabrinaCarpenter">
                     <h3>Shortn' Sweet</h3>
                     <p>SabrinaCarpenter</p>
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/CHROMAKOPIA-Tyler,TheCreator.jpg" alt="CHROMAKOPIA-Tyler">
+                    <img class="album-covers" src="./Spotify/Images/album-images/CHROMAKOPIA-Tyler,TheCreator.jpg" alt="CHROMAKOPIA-Tyler">
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/Blonde-FrankOcean.jpg" alt="Blonde-FrankOcean">
+                    <img class="album-covers" src="./Spotify/Images/album-images/Blonde-FrankOcean.jpg" alt="Blonde-FrankOcean">
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/BestWhiteNoiseforBabySleep-Dream-Supplier,BabySleeps,GranularNoise.jpg" alt="BestWhiteNoiseforBabySleep-Dream-Supplier">
+                    <img class="album-covers" src="./Spotify/Images/album-images/BestWhiteNoiseforBabySleep-Dream-Supplier,BabySleeps,GranularNoise.jpg" alt="BestWhiteNoiseforBabySleep-Dream-Supplier">
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/HurryUpTomorrow-TheWeeknd.jpeg" alt="HurryUpTomorrow-TheWeeknd">
+                    <img class="album-covers" src="./Spotify/Images/album-images/HurryUpTomorrow-TheWeeknd.jpeg" alt="HurryUpTomorrow-TheWeeknd">
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/reputation-TaylorSwift.jpg" alt="reputation-TaylorSwift">
+                    <img class="album-covers" src="./Spotify/Images/album-images/reputation-TaylorSwift.jpg" alt="reputation-TaylorSwift">
                 </article>
 
                 <article>
-                    <img class="Album Covers" src="./Spotify/Images/album-images/UnVeranoSinTi-BadBunny.jpg" alt="UnVeranoSinTi-BadBunny">
+                    <img class="album-covers" src="./Spotify/Images/album-images/UnVeranoSinTi-BadBunny.jpg" alt="UnVeranoSinTi-BadBunny">
                 </article>
             </div>
         </main>
