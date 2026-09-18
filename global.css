@@ -188,5 +188,7 @@ aside {
 
 /* Legal Links */
 .legal-links {
+    display: flex;
+    flex-direction: row;
     font-size: 22px;
 }
