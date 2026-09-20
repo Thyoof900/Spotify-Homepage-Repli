@@ -192,3 +192,35 @@ aside {
     flex-direction: row;
     font-size: 22px;
 }
+
+/* Header Section */
+header {
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+}
+
+/* Main Section */
+
+.album-container {
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+.album-covers {
+    width: 100px;
+    height: 100px;
+    border-radius: 2.5px;
+}
+
+article {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
