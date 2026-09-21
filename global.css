@@ -1,5 +1,5 @@
 body{
-    background-color: #121212;
+    background-color: black;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -132,10 +132,11 @@ nav {
 
 /* The Aside Tab */
 aside {
-    border: 2px solid gray;
+    border: 2px solid #121212;
     border-radius: 10px;
+    background-color: #121212;
     width: 450px;
-    max-height: 100%;
+    min-height: 700px;
 
     display: flex;
     flex-direction: column;
@@ -170,18 +171,44 @@ aside {
 }
 
 #aside-container1 {
-    border: 2px solid black;
+    border: 2px solid #b3b3b3;
     border-radius: 10px;
+    background-color: #b3b3b3;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 #aside-container2 {
-    border: 2px solid black;
+    border: 2px solid #b3b3b3;
+    background-color: #b3b3b3;
     border-radius: 10px;
     margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+#english {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid  #FFFFFF;
+    border-radius: 100px;
+    color: white;
+    max-width: 100px;
+    max-height: 40px;
+}
+
+.world-button {
+    max-width: 20px;
+    max-height: 20px;
+    align-self: center;
+    filter: invert(1);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.language-selection {
+    color: white;
+    align-self: center;
 }
 
 .create-playlist {
@@ -194,12 +221,29 @@ aside {
     margin: 10px
 }
 
+
+
 /* Legal Links */
-.legal-links {
+
+.legal-links-container1 {
+    margin: 20px;
+}
+
+.legal-links-container2 {
+    margin: 10px;
     display: flex;
-    flex-direction: row;
-    font-size: 22px;
+    flex-direction: column;
+}
+
+.legal-links {
+    font-size: 13px;
     color: white;
+    margin: 10px;
+}
+
+#privacy-choices {
+    border: 1px solid #1abc54;
+    background-color: #1abc54
 }
 
 /* Header Section */
@@ -212,21 +256,23 @@ header {
 /* Main Section */
 
 main {
-    border: 2px solid gray;
+    border: 2px solid #121212;
     border-radius: 10px;
+    background-color: #121212;
     flex-grow: 1;
-    max-width: 1200px;
+    max-width: 1380px;
+    min-height: 700px;
     width: 100%;
     padding: 10px;
 }
 
 .album-container {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 10px;
     margin: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .album-covers {
