@@ -131,8 +131,8 @@ nav {
 
 /* The Aside Tab */
 aside {
-    flex: 1;
-    min-width: 0;
+   max-width: 25%;
+   max-height: 800px;
 
     border: 2px solid #121212;
     border-radius: 10px;
