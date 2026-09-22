@@ -11,6 +11,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50px;
 }
 
 .nav-direction {
@@ -131,13 +132,13 @@ nav {
 
 /* The Aside Tab */
 aside {
-   max-width: 25%;
-   max-height: 800px;
+    max-width: 25%;
+    max-height: 800px;
 
     border: 2px solid #121212;
     border-radius: 10px;
     background-color: #121212;
-    min-height: 700px;
+    min-height: stretch;
 
     display: flex;
     flex-direction: column;
@@ -167,23 +168,26 @@ aside {
 
 .aside-content {
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     color: white;
+    font-size: smaller;
 }
 
 #aside-container1 {
-    border: 2px solid #b3b3b3;
+    border: 2px solid black;
+    filter: invert(15%);
     border-radius: 10px;
-    background-color: #b3b3b3;
+    background-color: black;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 #aside-container2 {
-    border: 2px solid #b3b3b3;
-    background-color: #b3b3b3;
+    border: 2px solid black;
+    background-color: black;
+    filter: invert(15%);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -194,8 +198,9 @@ aside {
     border: 1px solid  #FFFFFF;
     border-radius: 100px;
     color: white;
-    max-width: 100px;
-    max-height: 40px;
+    max-width: fit-content;
+    padding-right: 7.5px;
+    max-height: 35px;
 }
 
 .world-button {
@@ -210,36 +215,45 @@ aside {
 .language-selection {
     color: white;
     align-self: center;
+    font-weight: 600;
 }
 
 .create-playlist {
     border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
     border-radius: 100px;
     width: fit-content;
     height: fit-content;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 10px
 }
-
-
 
 /* Legal Links */
 
 .legal-links-container1 {
-    margin: 20px;
+    margin: 25px;
+    margin-top: 77px;
 }
 
 .legal-links-container2 {
-    margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.legal-links {
-    font-size: 13px;
-    color: white;
+#privacy-and-cookies {
     margin: 10px;
+}
+
+.legal-links {
+    font-size: 10px;
+    color: white;
+    margin: 5px;
+    font-weight: 200;
 }
 
 #privacy-choices {
@@ -251,6 +265,16 @@ aside {
     max-height: fit-content;
 }
 
+#check-bar {
+    width: 20px;
+    height: 20px;
+}
+
+#bolded-cookies {
+    font-weight: 1000;
+    font-size: small;
+}
+
 /* Header Section */
 header {
     color: white;
@@ -258,17 +282,20 @@ header {
     padding: 20px;
 }
 
+#header-label {
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
 /* Main Section */
 
 main {
-    width: 75%;
-
     border: 2px solid #121212;
     border-radius: 10px;
     background-color: #121212;
     flex-grow: 1;
-    max-width: 1380px;
-    min-height: 700px;
+    max-width: max-content;
+    min-height: stretch;
     width: 100%;
     padding: 10px;
 }
@@ -288,13 +315,30 @@ main {
     border-radius: 2.5px;
 }
 
+.song-container1 {
+    margin: 5px;
+}
+
+.song-container2 {
+    margin: 5px;
+    margin-top: 75px;
+}
+
+article h3 {
+text-align: start;
+}
+
+article p {
+    text-align: start;
+}
+
 article {
     color: white;
-    font-size: 14px;
+    font-size: 9px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
 }
 
@@ -303,7 +347,7 @@ article {
 footer {
     color: #121212;
     font-size: 14px;
-    padding: 20px;
+    padding-top: 10px;
 }
 
 #footer-container {
@@ -312,7 +356,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: purple;
+    background: linear-gradient(to right,#ae2f96, #4f9bf4); 
     color: white;
 
     max-width: 100%;
@@ -324,5 +368,17 @@ footer {
     border-radius: 100px;
     background-color: #FFFFFF;
     color: black;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-content1 {
+    margin: -.5px;
+    font-weight: bold;
+}
+
+.footer-content2 {
+    margin: -.5px;
 }
